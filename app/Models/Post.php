@@ -12,17 +12,4 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable=["title","content"];
-
-
-    // public static function boot()
-    // {
-        
-    //     static::deleting(function(Post $post){
-    //         $post->delete();
-    //     });
-
-    //     static::restoring(function(Post $post){
-    //         $post->comments()->onlyTrashed()->restore();
-    //     });
-    // }
 }
